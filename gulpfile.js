@@ -16,8 +16,12 @@ uswds.settings.version = 3;
 * Path settings
 * Set as many as you need
 */
-uswds.paths.dist.css = './assets/css';
-uswds.paths.dist.theme = './sass/uswds';
+uswds.paths.dist.css = './src/assets/uswds/css'; // Compiled CSS output
+uswds.paths.dist.theme = './src/sass/uswds'; // Custom Sass theme location
+uswds.paths.src.img = './src/assets/uswds/img'; // Source images (where your images are located)
+uswds.paths.dist.img = './src/assets/uswds/img'; // Where the compiled images/icons should go
+uswds.paths.dist.fonts = './src/assets/uswds/fonts'; // Fonts directory
+uswds.paths.dist.uswds = './src/assets/uswds/uswds'; // Where USWDS assets should be distributed
 
 /**
 * Exports
