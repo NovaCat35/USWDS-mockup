@@ -15,7 +15,7 @@ This mockup site utilizes the U.S. Web Design System (USWDS) to incorporate its 
 - Vite: a build tool that provides fast development environment
 - USWDS: U.S. Web Design System for accessible and user-friendly design components
  
-## Initial Setup Steps 🛠️
+## Initial Setup Steps (Starting from scratch)🛠️
 > Assuming Node.js is installed (see [Prerequisites](https://github.com/ITS-HCD/excelsior/wiki#prerequisites))
  
 ### Phase 1: Install
@@ -23,7 +23,7 @@ This mockup site utilizes the U.S. Web Design System (USWDS) to incorporate its 
 ```
 npm create vite@latest projectName -- --template react-ts
 cd projectName
-npm install⚙️
+npm install
 npm run dev
 ```
 2) Install USWDS

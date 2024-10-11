@@ -1,13 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>USWDS Mockup</title>
+		<!-- USWDS Script Initialization -->
+		<script type="text/javascript" src="/src/assets/uswds/js/uswds-init.js"></script>
+	</head>
+	<body>
+		<div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+		<!-- USWDS Script -->
+
+		<script type="text/javascript">
+			// Load USWDS after React component has mounted
+			window.onload = function () {
+				// Load the USWDS script
+				const script = document.createElement('script');
+				script.src = '/src/assets/uswds/js/uswds.js';
+				script.onload = function() {
+					// Initialize USWDS once the script is loaded
+					if (window.uswds) {
+						window.uswds.init();
+					}
+				};
+				document.body.appendChild(script); // Append the script to the body
+			};
+		</script>
+    <!-- <script type="text/javascript" src="/src/assets/uswds/js/uswds.js"></script> -->
+
+	</body>
 </html>
