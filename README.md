@@ -2,11 +2,11 @@
  
 This mockup site utilizes the U.S. Web Design System (USWDS) to incorporate its components. The purpose of this project is to explore design system concepts and practices.
 
-## Plan 
-- Make explore couple of web components into this site. 
-- Explore common patterns
-- Dabble with design tokens
-- Figure out utilities
+## NOTE TO SELF (Project Plan)
+- Dive into adding a few web components to this site and see how they fit.
+- Explore some common design patterns to streamline things.
+- Design tokens: Look at how USWDS make the site more adaptable by setting clear design tokens.
+- Utilities: Think of these like Tailwind — use them directly in classes to tweak styling fast and easily.
  
 ## Technologies Used 🚀
 - React: Javascript Library
