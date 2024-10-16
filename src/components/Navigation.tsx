@@ -33,10 +33,10 @@ function Navigation() {
 										<div className="usa-col">
 											<ul className="usa-nav__submenu-list">
 												<li className="usa-nav__submenu-item">
-													<a href="javascript:void(0);">&lt;Greets from NY&gt;</a>
+													<a href="javascript:void(0);">Greets from NY</a>
 												</li>
 												<li className="usa-nav__submenu-item">
-													<a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+													<a href="javascript:void(0);">About the team</a>
 												</li>
 												<li className="usa-nav__submenu-item">
 													<a href="javascript:void(0);">&lt;Navigation link&gt;</a>
@@ -94,13 +94,13 @@ function Navigation() {
 										<div className="usa-col">
 											<ul className="usa-nav__submenu-list">
 												<li className="usa-nav__submenu-item">
-													<a href="javascript:void(0);">&lt;Excelsior&gt;</a>
+													<a href="javascript:void(0);">Excelsior</a>
 												</li>
 												<li className="usa-nav__submenu-item">
-													<a href="javascript:void(0);">&lt;Design System&gt;</a>
+													<a href="javascript:void(0);">Design System</a>
 												</li>
 												<li className="usa-nav__submenu-item">
-													<a href="javascript:void(0);">&lt;USWDS Site&gt;</a>
+													<a href="javascript:void(0);">USWDS Site</a>
 												</li>
 											</ul>
 										</div>

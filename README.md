@@ -2,11 +2,11 @@
  
 This mockup site utilizes the U.S. Web Design System (USWDS) to incorporate its components. The purpose of this project is to explore design system concepts and practices.
 
-## NOTE TO SELF (Project Plan)
-- Dive into adding a few web components to this site and see how they fit.
-- Explore some common design patterns to streamline things.
-- Design tokens: Look at how USWDS make the site more adaptable by setting clear design tokens.
-- Utilities: Think of these like Tailwind — use them directly in classes to tweak styling fast and easily.
+## Features
+- Web Components Integration: Experiment by incorporating a few web components into the site and assess how well they integrate with existing functionality.
+- Common Design Patterns: Discover and apply design patterns that can simplify and streamline development.
+- Design Tokens: Examine how the U.S. Web Design System (USWDS) uses design tokens to make the site more adaptable, ensuring consistent visual styles across components.
+- Utility Classes: Leverage utility classes, similar to those in Tailwind, to quickly adjust and fine-tune styling by applying classes directly in your components.
  
 ## Technologies Used 🚀
 - React: Javascript Library
@@ -48,4 +48,30 @@ npm run dev
 > To have uswds-compile automatically watch for any Sass changes and recompile the CSS on the fly, run:
 `npx gulp watch`
 
-> To customize paths and structure of my specific project I change the compile paths in gulpfile to better fit with my project structure. Mainly to have src folder be the parent folder for development and assets/uswds separated from the react components
+> Note: I modified the compile paths in the gulpfile.js to better align with the specific folder structure of my project. This was mainly to ensure the src directory acts as the main parent folder for development, while keeping the assets/uswds folder distinct and separate from the React components. By doing this, the organization of USWDS assets and React components remains clear and easier to manage. (See the structure below for details).
+
+
+## Folder Structure
+```bash
+/
+├── node_modules/                # Project-wide Node modules
+├── public/                      # Public assets, including favicon, static files
+├── src/                         # Main source folder
+│   ├── assets/uswds/            # USWDS assets folder
+│   │   ├── css/                 # USWDS stylesheets
+│   │   ├── fonts/               # USWDS fonts
+│   │   ├── img/                 # USWDS images
+│   │   └── js/                  # USWDS JavaScript files
+│   ├── components/              # React components
+│   ├── sass/                    # Sass files for custom styles
+│   ├── main.tsx                 # Entry point for the React application
+├── App.css                      # Main application styles
+├── index.css                    # Global styles
+├── index.html                   # HTML template used by Vite
+├── .gitignore                   # Ignored files configuration for Git
+├── eslint.config.js             # ESLint configuration file for linting
+├── gulpfile.js                  # Gulp tasks configuration for automation
+├── README.md                    # Project documentation (this file)
+├── tsconfig.json                # TypeScript configuration
+├── vite.config.ts               # Vite configuration file
+```

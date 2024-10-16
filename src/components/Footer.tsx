@@ -12,22 +12,22 @@ function Footer() {
 						<ul className="grid-row grid-gap">
 							<li className="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
 								<a className="usa-footer__primary-link" href="javascript:void(0);">
-									&lt;Primary link&gt;
+									Home
 								</a>
 							</li>
 							<li className="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
 								<a className="usa-footer__primary-link" href="javascript:void(0);">
-									&lt;Primary link&gt;
+									Components
 								</a>
 							</li>
 							<li className="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
 								<a className="usa-footer__primary-link" href="javascript:void(0);">
-									&lt;Primary link&gt;
+									Utilities
 								</a>
 							</li>
 							<li className="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
 								<a className="usa-footer__primary-link" href="javascript:void(0);">
-									&lt;Primary link&gt;
+									About Us
 								</a>
 							</li>
 						</ul>
@@ -72,14 +72,14 @@ function Footer() {
 										</a>
 									</div>
 								</div>
-								<p className="usa-footer__contact-heading">&lt;Agency Contact Center&gt;</p>
+								<p className="usa-footer__contact-heading">NYS Design Team</p>
 								<address className="usa-footer__address">
 									<div className="usa-footer__contact-info grid-row grid-gap">
 										<div className="grid-col-auto">
-											<a href="tel:1-800-555-5555">&lt;(800) 555-GOVT&gt;</a>
+											<a href="tel:1-800-555-5555">(800) 555-GOVT</a>
 										</div>
 										<div className="grid-col-auto">
-											<a href="mailto:info@agency.gov">&lt;info@agency.gov&gt;</a>
+											<a href="mailto:info@agency.gov">info@agency.gov</a>
 										</div>
 									</div>
 								</address>
