@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import metroCat from "../assets/uswds/img/metro_cat.gif";
 
 function EndModal() {

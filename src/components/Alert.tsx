@@ -1,5 +1,3 @@
-import React from "react";
-
 type AlertsProps = {
 	alertType: string; // Define the type as string
 	headerText: string; // Define the type as string
