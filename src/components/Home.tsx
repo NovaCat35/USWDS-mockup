@@ -1,4 +1,4 @@
-import Navigation from "./navigation";
+import Navigation from "./Navigation";
 import Accordion from "./Accordion";
 import Alert from "./Alert";
 import Grid from "./Grid";
