@@ -2,6 +2,8 @@
  
 This mockup site utilizes the U.S. Web Design System (USWDS) to incorporate its components. The purpose of this project is to explore design system concepts and practices.
 
+Live server: https://uswds-mockup.pages.dev/ 🦅
+
 ## Features
 - Web Components Integration: Experiment by incorporating a few web components into the site and assess how well they integrate with existing functionality.
 - Common Design Patterns: Discover and apply design patterns that can simplify and streamline development.
