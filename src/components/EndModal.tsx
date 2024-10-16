@@ -2,26 +2,33 @@ import React, { useState } from "react";
 import metroCat from "../assets/uswds/img/metro_cat.gif";
 
 function EndModal() {
-  const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+	const openModal = () => setIsOpen(true);
+	const closeModal = () => setIsOpen(false);
 
-  return (
-    <React.Fragment>
-      <button onClick={openModal} className="usa-button">Open Modal</button>
-      
-      {isOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <span className="close-button" onClick={closeModal}>&times;</span>
-            <img src={metroCat} alt="Metro Cat" className="modal-image" />
-            <p>Thanks for viewing!</p>
-          </div>
-        </div>
-      )}
+	return (
+		<>
+			<button onClick={openModal} className="border-2px margin-x-2 radius-md hover:bg-base-darker hover:text-accent-cool-light hover:border-blue cursor-pointer">
+				Click Me
+			</button>
 
-      <style>{`
+			{isOpen && (
+				<div className="modal-overlay">
+					<div className="modal-content">
+						{/* <span className="close-button" onClick={closeModal}>
+							&times;
+						</span> */}
+						<button className="close-button" aria-label="Close this modal" onClick={closeModal}>
+							×
+						</button>
+						<img src={metroCat} alt="Metro Cat" className="modal-image" />
+						<p>Thanks for viewing!</p>
+					</div>
+				</div>
+			)}
+
+			<style>{`
         .modal-overlay {
           position: fixed;
           top: 0;
@@ -32,6 +39,7 @@ function EndModal() {
           display: flex;
           justify-content: center;
           align-items: center;
+          z-index: 10;
         }
         .modal-content {
           background-color: white;
@@ -52,8 +60,8 @@ function EndModal() {
           cursor: pointer;
         }
       `}</style>
-    </React.Fragment>
-  );
+		</>
+	);
 }
 
 export default EndModal;
