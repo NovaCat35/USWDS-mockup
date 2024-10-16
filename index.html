@@ -6,18 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>USWDS Mockup</title>
 		<!-- USWDS Script Initialization -->
-		<script type="application/javascript" src="/src/assets/uswds/js/uswds-init.js"></script>
+		<!-- Please note the change in src link with the "/src/" within "/src/assets/uswds/..." being removed for production-->
+		<script type="application/javascript" src="/assets/uswds/js/uswds-init.js"></script>
 	</head>
 	<body>
 		<div id="root"></div>
 		<!-- USWDS Script -->
+		<!-- Please note the change in src link with the "/src/" within "/src/assets/uswds/..." being removed for production-->
 		<script type="application/javascript">
 			// Load USWDS after React component has mounted
 			window.onload = function () {
 				// Load the USWDS script
-				const script = document.createElement('script');
-				script.src = '/src/assets/uswds/js/uswds.js';
-				script.onload = function() {
+				const script = document.createElement("script");
+				script.src = "/assets/uswds/js/uswds.js";
+				script.onload = function () {
 					// Initialize USWDS once the script is loaded
 					if (window.uswds) {
 						window.uswds.init();
@@ -26,9 +28,8 @@
 				document.body.appendChild(script); // Append the script to the body
 			};
 		</script>
-    <!-- <script type="text/javascript" src="/src/assets/uswds/js/uswds.js"></script> -->
+		<!-- <script type="text/javascript" src="/src/assets/uswds/js/uswds.js"></script> -->
 
-
-    <script type="module" src="/src/main.tsx"></script>
+		<script type="module" src="/src/main.tsx"></script>
 	</body>
 </html>
