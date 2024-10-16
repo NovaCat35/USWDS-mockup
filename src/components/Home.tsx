@@ -2,6 +2,7 @@ import Navigation from "./navigation";
 import Accordion from "./Accordion";
 import Alert from "./Alert";
 import Grid from "./Grid";
+import Card from "./Card";
 import Footer from "./Footer";
 
 function Home() {
@@ -41,6 +42,7 @@ function Home() {
 				/>
 				<Accordion />
             <Grid />
+            <Card/>
 
             <Alert
 					alertType="warning"
