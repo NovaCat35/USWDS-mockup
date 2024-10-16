@@ -1,4 +1,4 @@
-import React from "react";
+import logo from "../assets/uswds/img/us_flag.svg";
 
 function Navigation() {
 	return (
@@ -7,7 +7,8 @@ function Navigation() {
 			<div className="usa-overlay"></div>
 			<header className="usa-header usa-header--extended">
 				<div className="usa-navbar">
-					<div className="usa-logo">
+					<div className="usa-logo display-flex">
+                  <img className="width-10 tablet:width-5 mobile-lg:width-3 margin-right-2" src={logo} alt="site logo" />
 						<em className="usa-logo__text">
 							<a href="/" title="<Project title>">
 								USWDS Mockup

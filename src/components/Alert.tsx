@@ -10,7 +10,6 @@ type AlertsProps = {
 function Alerts({ alertType, headerText, mainTextJSX, mainTextStr }: AlertsProps) {
 	return (
 		<>
-			<h3 className="site-preview-heading">Technology Stack</h3>
 			<div className={`usa-alert usa-alert--${alertType}`}>
 				<div className="usa-alert__body">
 					<h4 className="usa-alert__heading">{headerText}</h4>

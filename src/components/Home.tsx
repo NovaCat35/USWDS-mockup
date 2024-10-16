@@ -1,6 +1,7 @@
 import Navigation from "./navigation";
 import Accordion from "./Accordion";
 import Alert from "./Alert";
+import Grid from "./Grid";
 import Footer from "./Footer";
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
 				</div>
 				{/* HOW TO FLEX THE BELOW? */}
 				<div className="display-flex flex-row flex-justify-center">
-					<button className="border-2px margin-x-2 radius-md hover:bg-base-darker hover:text-accent-cool-light hover:border-blue">Click Me</button>
+					<button className="border-2px margin-x-2 radius-md hover:bg-base-darker hover:text-accent-cool-light hover:border-blue cursor-pointer">Click Me</button>
 					<button className="usa-button" type="button">
 						Meet the Team
 					</button>
@@ -24,6 +25,7 @@ function Home() {
 					</button>
 				</div>
 
+            <h3 className="site-preview-heading">Technology Stack</h3>
 				<Alert
 					alertType="info"
 					headerText="Informative status"
@@ -38,6 +40,13 @@ function Home() {
 					}
 				/>
 				<Accordion />
+            <Grid />
+
+            <Alert
+					alertType="warning"
+					headerText="Known Issues"
+					mainTextStr="A standard script tag linking to uswds.js is ineffective unless a JavaScript timeout is initially set. This ensures the script loads properly after the page content is ready. Additionally, some responsive parts are lacking."
+				/>
 			</main>
 			<Footer />
 		</>
