@@ -36,7 +36,7 @@ function Footer() {
 						<div className="grid-row grid-gap">
 							<div className="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
 								<div className="mobile-lg:grid-col-auto">
-									<img className="usa-footer__logo-img" src="/assets/img/logo-img.png" alt="" />
+									<img className="usa-footer__logo-img" src="src/assets/uswds/img/logo-img.png" alt="" />
 								</div>
 								<div className="mobile-lg:grid-col-auto">
 									<p className="usa-footer__logo-heading">USWDS Mockup</p>
