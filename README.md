@@ -14,10 +14,10 @@ Live server: https://uswds-mockup.pages.dev/ 🦅
 - React: Javascript Library
 - Node.js: Javascript runtime that allows for server-side scripting
 - TypeScript: main language choice
-- Vite: a build tool that provides fast development environment
+- Vite: a build tool that provides a fast development environment
 - USWDS: U.S. Web Design System for accessible and user-friendly design components
  
-## Initial Setup Steps (Starting from scratch)🛠️
+## Initial Setup Steps (Starting from scratch) 🛠️
 > Assuming Node.js is installed (see [Prerequisites](https://github.com/ITS-HCD/excelsior/wiki#prerequisites))
  
 ### Phase 1: Install
@@ -39,9 +39,8 @@ npm run dev
 `touch gulpfile.js`
 > Import the uswds-compile package by adding `const uswds = require("@uswds/compile");` to the top of the gulpfile. To set USWDS version, declare `uswds.settings.version = 3;` 
 
-5) Initialize Project 
-> ⚠️ Do npx gulp init FIRST to create the necessary directories and files for USWDS
-`npx gulp init`
+5) Initialize Project `npx gulp init`
+> ⚠️ You must execute `npx gulp init` FIRST to create the necessary directories and files for USWDS
 
 6) Compile Gulp
 `npx gulp compile`
@@ -52,12 +51,12 @@ npm run dev
 
 > Note: I modified the compile paths in the gulpfile.js to better align with the specific folder structure of my project. This was mainly to ensure the src directory acts as the main parent folder for development, while keeping the assets/uswds folder distinct and separate from the React components. By doing this, the organization of USWDS assets and React components remains clear and easier to manage. (See the structure below for details).
 
-### PRODUCTION
+### PRODUCTION 
 > Note: public directory is for static assets that won't be processed by the build pipeline but will be copied to the dist folder as-is. Use this for the js/img files that isn't being compiled.
 
 Please check the build on package.json and any vite configuration. Also redirect anything in the original src to the dist or public folder for production if the links won't automatically point to compiled files.
 
-## Folder Structure
+## Folder Structure 🗂️
 ```bash
 /
 ├── node_modules/                # Project-wide Node modules
@@ -85,6 +84,6 @@ Please check the build on package.json and any vite configuration. Also redirect
 ```
 
 ## Issue Warning ⚠️
-> 10/16/24: In my attempt to push the code to production and using React with USWDS, uswds.js & uswds-init.js is not compiled into /dist. It's wonky for some component (**cough* navbar **cough*) to say, but for demo purpose on the local server, it does the job.
+> 10/16/24: In my attempt to push the code to production and using React with USWDS, uswds.js & uswds-init.js are not compiled into /dist. It's wonky for some components (**cough* navbar **cough*) to say, but for demo purpose on the local server, it does the job.
 
-> 10/17/24: The JS wonky code has been fixed. JS/Img files has been moved
+> 10/17/24: The JS wonky code has been fixed. JS/Img files have been moved to public folder for compiling to /dist
