@@ -30,7 +30,7 @@ npm run dev
 ```
 2) Install USWDS
 > see official [USWDS](https://designsystem.digital.gov/documentation/getting-started/developers/phase-one-install/) site for details
-c 
+`npm install @uswds/uswds --save-exact`
 3) Install uswds-compile (needed for Sass compilation)
 `npm install @uswds/compile --save-dev`
  
@@ -61,13 +61,13 @@ Please check the build on package.json and any vite configuration. Also redirect
 /
 ├── node_modules/                # Project-wide Node modules
 ├── public/                      # Public assets, including favicon, static files
+│   ├── img/                     # Static images
+│   └── js/                      # Static JavaScript files
 ├── src/                         # Main source folder
 │   ├── assets/uswds/            # USWDS assets folder
 │   │   ├── css/                 # USWDS stylesheets
 │   │   ├── fonts/               # USWDS fonts
-│   │   ├── img/                 # USWDS images
-│   │   └── js/                  # USWDS JavaScript files
-│   ├── components/              # React components
+│   └── components/              # React components
 │   ├── sass/                    # Sass files for custom styles
 │   ├── main.tsx                 # Entry point for the React application
 ├── App.css                      # Main application styles
@@ -77,9 +77,13 @@ Please check the build on package.json and any vite configuration. Also redirect
 ├── eslint.config.js             # ESLint configuration file for linting
 ├── gulpfile.js                  # Gulp tasks configuration for automation
 ├── README.md                    # Project documentation (this file)
-├── tsconfig.json                # TypeScript configuration
+├── tsconfig.app.json            # TypeScript configuration for the app
+├── tsconfig.json                # General TypeScript configuration
+├── tsconfig.node.json           # TypeScript configuration for Node.js
 ├── vite.config.ts               # Vite configuration file
 ```
 
 ## Issue Warning ⚠️
 > 10/16/24: In my attempt to push the code to production and using React with USWDS, uswds.js & uswds-init.js is not compiled into /dist. It's wonky for some component (**cough* navbar **cough*) to say, but for demo purpose on the local server, it does the job.
+
+> 10/17/24: The JS wonky code has been fixed. JS/Img files has been moved
