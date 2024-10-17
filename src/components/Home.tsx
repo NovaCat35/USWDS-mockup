@@ -81,7 +81,7 @@ function Home() {
 				<Grid />
 				<Card />
 
-				<Alert alertType="warning" headerText="Known Issues" mainTextStr="A standard script tag linking to src/assets/uswds/js/uswds.js is ineffective unless a JavaScript timeout is initially set. This ensures the script loads properly after the page content is ready. Additionally, some responsive parts are lacking (e.g. setting responsive images)." />
+				<Alert alertType="warning" headerText="Known Issues" mainTextStr="10/16/24: During the demo, the initial method of using script in index.html to load src/assets/uswds/js/uswds.js was ineffective and wonky methods were employed. Further, production build was not working. These issues have been fixed by moving js/img to public folder for build distribution and the js files is uploaded within Home.tsx" />
 			</main>
 			<Footer />
 		</>

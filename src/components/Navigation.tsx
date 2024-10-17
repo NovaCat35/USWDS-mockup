@@ -22,7 +22,7 @@ function Navigation() {
 				<nav aria-label="Primary navigation" className="usa-nav">
 					<div className="usa-nav__inner">
 						<button type="button" className="usa-nav__close">
-							<img src="../../uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+							<img src="../../img/usa-icons/close.svg" role="img" alt="Close" />
 						</button>
 						<ul className="usa-nav__primary usa-accordion">
 							<li className="usa-nav__primary-item">
