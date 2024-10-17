@@ -39,11 +39,12 @@ npm run dev
 `touch gulpfile.js`
 > Import the uswds-compile package by adding `const uswds = require("@uswds/compile");` to the top of the gulpfile. To set USWDS version, declare `uswds.settings.version = 3;` 
 
-5) Compile Gulp
-`npx gulp compile`
-
-6) Initialize Project
+5) Initialize Project 
+> ⚠️ Do npx gulp init FIRST to create the necessary directories and files for USWDS
 `npx gulp init`
+
+6) Compile Gulp
+`npx gulp compile`
 
 ### Phase 3: Customize
 > To have uswds-compile automatically watch for any Sass changes and recompile the CSS on the fly, run:
