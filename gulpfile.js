@@ -1,9 +1,7 @@
-/* gulpfile.js */
-
-/**
+/*
 * Import uswds-compile
 */
-import uswds from "@uswds/compile";
+import uswds from '@uswds/compile';
 
 /**
 * USWDS version
@@ -16,12 +14,23 @@ uswds.settings.version = 3;
 * Path settings
 * Set as many as you need
 */
-uswds.paths.dist.css = './src/assets/uswds/css'; // Compiled CSS output
-uswds.paths.dist.theme = './src/sass/uswds'; // Custom Sass theme location
-uswds.paths.src.img = './src/assets/uswds/img'; // Source images (where your images are located)
-uswds.paths.dist.img = './src/assets/uswds/img'; // Where the compiled images/icons should go
-uswds.paths.dist.fonts = './src/assets/uswds/fonts'; // Fonts directory
-uswds.paths.dist.uswds = './src/assets/uswds/uswds'; // Where USWDS assets should be distributed
+uswds.paths = {
+   src: {
+     uswds: './src/assets/uswds',
+     sass: './src/assets/uswds/sass',
+     theme: './src/assets/uswds/sass/theme',
+     fonts: './src/assets/uswds/fonts',
+     img: './src/assets/uswds/img',
+     js: './src/assets/uswds/js',
+   },
+   dist: {
+     theme: './src/assets/uswds/sass',
+     img: './src/assets/uswds/images',
+     fonts: './src/assets/uswds/fonts',
+     js: './src/assets/uswds/js',
+     css: './src/assets/uswds/css',
+   },
+ };
 
 /**
 * Exports

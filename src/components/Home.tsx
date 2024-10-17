@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Accordion from "./Accordion";
 import Alert from "./Alert";
@@ -7,16 +8,51 @@ import Footer from "./Footer";
 import EndModal from "./EndModal";
 
 function Home() {
+	const [isInitLoaded, setIsInitLoaded] = useState(false); // State to track when uswds-init.js is loaded
+
+	useEffect(() => {
+		const uswdsInitScript = document.createElement("script");
+		uswdsInitScript.src = "/src/assets/uswds/js/uswds-init.js";
+		uswdsInitScript.async = true;
+
+		uswdsInitScript.onload = () => {
+			// When uswds-init.js is successfully loaded, ONLY then should we execute uswds.js
+			setIsInitLoaded(true);
+		};
+
+		document.body.appendChild(uswdsInitScript);
+
+		return () => {
+			document.body.removeChild(uswdsInitScript);
+		};
+	}, []);
+
+	// This will load uswds.js after uswds-init.js is loaded
+	useEffect(() => {
+		if (isInitLoaded) {
+			// Only run if uswds-init.js has loaded
+			const uswdsScript = document.createElement("script");
+			uswdsScript.src = "/src/assets/uswds/js/uswds.js";
+			uswdsScript.async = true;
+
+			document.body.appendChild(uswdsScript);
+
+			return () => {
+				document.body.removeChild(uswdsScript);
+			};
+		}
+	}, [isInitLoaded]);
+
 	return (
 		<>
 			{/* Navigation */}
 			<Navigation />
 
+			{/* Custom button section */}
 			<main className="margin-x-8">
 				<div className="font-serif-3xl margin-y-4 margin-x-8 text-center">
 					Hello, World! <br /> Welcome to the NYS demo ground.
 				</div>
-				{/* HOW TO FLEX THE BELOW? */}
 				<div className="display-flex flex-row flex-justify-center">
 					<EndModal />
 					<button className="usa-button" type="button">

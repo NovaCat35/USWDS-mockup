@@ -30,8 +30,7 @@ npm run dev
 ```
 2) Install USWDS
 > see official [USWDS](https://designsystem.digital.gov/documentation/getting-started/developers/phase-one-install/) site for details
-`npm install @uswds/uswds --save-exact`
- 
+c 
 3) Install uswds-compile (needed for Sass compilation)
 `npm install @uswds/compile --save-dev`
  
@@ -77,3 +76,6 @@ npm run dev
 ├── tsconfig.json                # TypeScript configuration
 ├── vite.config.ts               # Vite configuration file
 ```
+
+## Issue Warning ⚠️
+> In my attempt to push the code to production and using React with USWDS, uswds.js & uswds-init.js is not compiled into /dist . It's wonky for some component (**cough* navbar **cough*) to say, but for demo purpose on the local server, it does the job.
