@@ -12,7 +12,7 @@ function Home() {
 
 	useEffect(() => {
 		const uswdsInitScript = document.createElement("script");
-		uswdsInitScript.src = "/src/assets/uswds/js/uswds-init.js";
+		uswdsInitScript.src = "/js/uswds-init.js";
 		uswdsInitScript.async = true;
 
 		uswdsInitScript.onload = () => {
@@ -32,7 +32,7 @@ function Home() {
 		if (isInitLoaded) {
 			// Only run if uswds-init.js has loaded
 			const uswdsScript = document.createElement("script");
-			uswdsScript.src = "/src/assets/uswds/js/uswds.js";
+			uswdsScript.src = "/js/uswds.js";
 			uswdsScript.async = true;
 
 			document.body.appendChild(uswdsScript);

@@ -36,7 +36,7 @@ function Footer() {
 						<div className="grid-row grid-gap">
 							<div className="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
 								<div className="mobile-lg:grid-col-auto">
-									<img className="usa-footer__logo-img" src="src/assets/uswds/img/logo-img.png" alt="" />
+									<img className="usa-footer__logo-img" src="../../img/logo-img.png" alt="" />
 								</div>
 								<div className="mobile-lg:grid-col-auto">
 									<p className="usa-footer__logo-heading">USWDS Mockup</p>
@@ -46,27 +46,27 @@ function Footer() {
 								<div className="usa-footer__social-links grid-row grid-gap-1">
 									<div className="grid-col-auto">
 										<a className="usa-social-link" href="javascript:void(0);">
-											<img className="usa-social-link__icon" src="src/assets/uswds/img/usa-icons/facebook.svg" alt="Facebook" />
+											<img className="usa-social-link__icon" src="../../img/usa-icons/facebook.svg" alt="Facebook" />
 										</a>
 									</div>
 									<div className="grid-col-auto">
 										<a className="usa-social-link" href="javascript:void(0);">
-											<img className="usa-social-link__icon" src="src/assets/uswds/img/usa-icons/twitter.svg" alt="Twitter" />
+											<img className="usa-social-link__icon" src="../../img/usa-icons/twitter.svg" alt="Twitter" />
 										</a>
 									</div>
 									<div className="grid-col-auto">
 										<a className="usa-social-link" href="javascript:void(0);">
-											<img className="usa-social-link__icon" src="src/assets/uswds/img/usa-icons/youtube.svg" alt="YouTube" />
+											<img className="usa-social-link__icon" src="../../img/usa-icons/youtube.svg" alt="YouTube" />
 										</a>
 									</div>
 									<div className="grid-col-auto">
 										<a className="usa-social-link" href="javascript:void(0);">
-											<img className="usa-social-link__icon" src="src/assets/uswds/img/usa-icons/instagram.svg" alt="Instagram" />
+											<img className="usa-social-link__icon" src="../../img/usa-icons/instagram.svg" alt="Instagram" />
 										</a>
 									</div>
 									<div className="grid-col-auto">
 										<a className="usa-social-link" href="javascript:void(0);">
-											<img className="usa-social-link__icon" src="src/assets/uswds/img/usa-icons/rss_feed.svg" alt="RSS" />
+											<img className="usa-social-link__icon" src="../../img/usa-icons/rss_feed.svg" alt="RSS" />
 										</a>
 									</div>
 								</div>

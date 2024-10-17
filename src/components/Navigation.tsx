@@ -1,4 +1,4 @@
-import logo from "../assets/uswds/img/us_flag.svg";
+import logo from "../../public/img/us_flag.svg";
 
 function Navigation() {
 	return (
@@ -22,7 +22,7 @@ function Navigation() {
 				<nav aria-label="Primary navigation" className="usa-nav">
 					<div className="usa-nav__inner">
 						<button type="button" className="usa-nav__close">
-							<img src="src/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+							<img src="../../uswds/img/usa-icons/close.svg" role="img" alt="Close" />
 						</button>
 						<ul className="usa-nav__primary usa-accordion">
 							<li className="usa-nav__primary-item">
@@ -162,7 +162,7 @@ function Navigation() {
 									</label>
 									<input className="usa-input" id="search-field" type="search" name="search" />
 									<button className="usa-button" type="submit">
-										<img src="src/assets/uswds/img/usa-icons-bg/search--white.svg" className="usa-search__submit-icon" alt="Search" />
+										<img src="../../img/usa-icons-bg/search--white.svg" className="usa-search__submit-icon" alt="Search" />
 									</button>
 								</form>
 							</section>

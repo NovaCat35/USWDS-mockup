@@ -51,6 +51,10 @@ c
 
 > Note: I modified the compile paths in the gulpfile.js to better align with the specific folder structure of my project. This was mainly to ensure the src directory acts as the main parent folder for development, while keeping the assets/uswds folder distinct and separate from the React components. By doing this, the organization of USWDS assets and React components remains clear and easier to manage. (See the structure below for details).
 
+### PRODUCTION
+> Note: public directory is for static assets that won't be processed by the build pipeline but will be copied to the dist folder as-is. Use this for the js/img files that isn't being compiled.
+
+Please check the build on package.json and any vite configuration. Also redirect anything in the original src to the dist or public folder for production if the links won't automatically point to compiled files.
 
 ## Folder Structure
 ```bash
@@ -78,4 +82,4 @@ c
 ```
 
 ## Issue Warning ⚠️
-> In my attempt to push the code to production and using React with USWDS, uswds.js & uswds-init.js is not compiled into /dist . It's wonky for some component (**cough* navbar **cough*) to say, but for demo purpose on the local server, it does the job.
+> 10/16/24: In my attempt to push the code to production and using React with USWDS, uswds.js & uswds-init.js is not compiled into /dist. It's wonky for some component (**cough* navbar **cough*) to say, but for demo purpose on the local server, it does the job.

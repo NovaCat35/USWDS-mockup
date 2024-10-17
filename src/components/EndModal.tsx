@@ -1,5 +1,5 @@
 import { useState } from "react";
-import metroCat from "../assets/uswds/img/metro_cat.gif";
+import metroCat from "../../public/img/metro_cat.gif";
 
 function EndModal() {
 	const [isOpen, setIsOpen] = useState(false);

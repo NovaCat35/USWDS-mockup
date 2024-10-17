@@ -16,19 +16,19 @@ uswds.settings.version = 3;
 */
 uswds.paths = {
    src: {
-     uswds: './src/assets/uswds',
-     sass: './src/assets/uswds/sass',
-     theme: './src/assets/uswds/sass/theme',
-     fonts: './src/assets/uswds/fonts',
-     img: './src/assets/uswds/img',
-     js: './src/assets/uswds/js',
+     uswds: './public/assets/uswds',
+     sass: './public/assets/uswds/sass',
+     theme: './public/assets/uswds/sass/theme',
+     fonts: './public/assets/uswds/fonts',
+     img: './public/assets/uswds/img',
+     js: './public/assets/uswds/js',
    },
    dist: {
-     theme: './src/assets/uswds/sass',
-     img: './src/assets/uswds/images',
-     fonts: './src/assets/uswds/fonts',
-     js: './src/assets/uswds/js',
-     css: './src/assets/uswds/css',
+     theme: './public/assets/uswds/sass',
+     img: './public/assets/uswds/images',
+     fonts: './public/assets/uswds/fonts',
+     js: './public/assets/uswds/js',
+     css: './public/assets/uswds/css',
    },
  };
 
